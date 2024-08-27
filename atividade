@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Multiplos {
+    public static void main(String[] args) {
+        // Cria um objeto Scanner para ler a entrada
+        Scanner scanner = new Scanner(System.in);
+        
+        // Lê os dois valores inteiros A e B
+        int A = scanner.nextInt();
+        int B = scanner.nextInt();
+        
+        // Verifica se A e B são múltiplos entre si
+        if (A % B == 0 || B % A == 0) {
+            System.out.println("são multiplos");
+        } else {
+            System.out.println("não são multiplos");
+        }
+        
+        // Fecha o scanner
+        scanner.close();
+    }
+}
