@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class CalculaCombustivel {
+    public static void main(String[] args) {
+        // Cria um objeto Scanner para ler a entrada
+        Scanner scanner = new Scanner(System.in);
+        
+        // Lê o tempo gasto na viagem (em horas) e a velocidade média (em km/h)
+        int tempo = scanner.nextInt();
+        int velocidade = scanner.nextInt();
+        
+        // Calcula a distância percorrida
+        double distancia = tempo * velocidade;
+        
+        // Calcula a quantidade de litros necessários (com o rendimento de 12 km/l)
+        double litrosNecessarios = distancia / 12.0;
+        
+        // Exibe a quantidade de litros com 3 casas decimais
+        System.out.printf("%.3f\n", litrosNecessarios);
+        
+        // Fecha o scanner
+        scanner.close();
+    }
+}
